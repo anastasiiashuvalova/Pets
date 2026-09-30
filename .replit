@@ -1,0 +1,16 @@
+run = "npm run dev"
+entrypoint = "index.html"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "npx serve -s dist -l $PORT"]
+build = ["npm", "run", "build"]
+
+[env]
+PORT = "5000"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
