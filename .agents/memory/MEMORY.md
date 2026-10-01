@@ -1,0 +1,1 @@
+- [Browser verification](browser-verification.md) — prefer the environment-provided Chromium for local browser checks on NixOS.
