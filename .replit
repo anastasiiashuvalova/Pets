@@ -8,6 +8,8 @@ channel = "stable-25_05"
 [deployment]
 run = ["sh", "-c", "npx serve -s dist -l $PORT"]
 build = ["npm", "run", "build"]
+deploymentTarget = "gce"
+ignorePorts = false
 
 [env]
 PORT = "5000"
